@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/babel-preset-env",
+      "**/babel-preset-env/**",
+      "**/@ember-decorators/babel-transforms",
+      "**/@ember-decorators/babel-transforms/**",
+      "**/jquery.treegrid/",
+      "**/jquery.treegrid/**",
+      "**/jquery-jsonview/",
+      "**/jquery-jsonview/**",
+      "**/marked/",
+      "**/marked/**"
+    ]
+  },
+  "dependencies": {
+    "ember-cli-typescript": "2.0.0-beta.3"
+  }
+}
