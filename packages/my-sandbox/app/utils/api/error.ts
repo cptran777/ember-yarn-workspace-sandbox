@@ -49,7 +49,7 @@ class ApiError extends Error {
  * @returns {Promise<T>}
  */
 // Throws error in ember-cli-typescript@2.0.0-beta.3 but not ember-cli-typescript@1.5.0
-const throwIfApiError = async function<T>(response: Response): Promise<T> {
+const throwIfApiError = async <T>(response: Response): Promise<T> => {
   const { status, ok } = response;
 
   if (!ok) {
